@@ -3,6 +3,7 @@ library(stats)
 library(gendata)
 
 #----Question 1----
+
 pvs1 <- numeric(1000) 
 
 set.seed(123)
@@ -43,16 +44,20 @@ sum2/1000
 # 57% of the time the correlation between these two variables is significant 
 
 #----Question 2B----
+
+
 #histogram of the correlation coefficient values
 
 hist(corr, breaks = 20)
 
 #----Question 2C----
 
+
 mean(corr)
 #mean of the 1,000 correlation coefficients is .30
 
 #----Question 2D----
+
 
 pvs2d <- numeric(1000) 
 corr2d <- numeric(1000) 
@@ -74,6 +79,7 @@ sum2d/1000
 
 
 #----Question 2E----
+
 
 library(pwr)
 set.seed(123)
